@@ -326,6 +326,7 @@ nav{
 h1 {
     text-align: center;
     color: #3664F4;
+    margin-top: 70px;
     margin-bottom: 30px;
 }
 
@@ -425,6 +426,7 @@ textarea {
 @media (max-width: 480px) {
     h1 {
         font-size: 24px;
+        margin-top: 70px;
     }
 
     .container {
