@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Rights</title>
+    <link rel="stylesheet" href="./css/patientright.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">UITH</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">UITH</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="./index.html">HOME</a></li>
+              <li>
+                <a href="./schools.html">SCHOOLS</a>
+              </li>
+              <li>
+                <a href="./department.html">DEPARTMENT</a>
+              </li>
+              <li>
+                <a href="./gallery.html">GALLERY</a>
+              </li>
+              <li><a href="./aboutus.html">ABOUT US</a></li>
+              <li><a href="./clinicdays.html">CLINIC DAYS</a></li>
+              <li><a href="./contactus.html">CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+    </nav>
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>Welcome to Our Patient Rights Page</h2>
+                <p>We are committed to ensuring your rights and protecting your privacy. Here, we provide information on your rights as a patient in our healthcare system.</p>
+            </div>
+        </section>
+
+        <section class="rights">
+            <div class="container">
+                <h2>Your Rights as a Patient</h2>
+                <ul>
+                    <li><span class="icon">✓</span> The right to receive high-quality care.</li>
+                    <li><span class="icon">✓</span> The right to privacy and confidentiality.</li>
+                    <li><span class="icon">✓</span> The right to informed consent.</li>
+                    <li><span class="icon">✓</span> The right to participate in decisions about your healthcare.</li>
+                    <li><span class="icon">✓</span> The right to access your medical records.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px;
+}
+
+/* Introduction Section */
+.intro {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Rights section styles */
+.rights {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rights h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.rights ul {
+    list-style-type: none;
+}
+
+.rights ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.rights ul li .icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #050a30;
+}
+
+/* Animation for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 1.8em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .rights h2 {
+        font-size: 1.8em;
+    }
+
+    .rights ul li {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 1.6em;
+    }
+
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .rights h2 {
+        font-size: 1.6em;
+    }
+
+    .rights ul li {
+        font-size: 1em;
+    }
+
+    .rights ul li .icon {
+        font-size: 1.3em;
+    }
+}
+
+    </style>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Old Jebba Road, Oke Ose, Ilorin, Kwara State, Nigeria</p>
+            <p><i class="fas fa-phone-alt"></i>+2348055763942, +2348137875019</p>
+            <p><i class="fas fa-envelope"></i>info@uithilorin.org.ng</p>
+            <h3>Tech Support</h3>
+            <p><i class="fas fa-envelope"></i>webunit@uithilorin.org.ng</p>
+          </div>
+          <div class="footer-section">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fas fa-users"></i>Patient Rights</a></li>
+              <li><a href="./ourservices.html"><i class="fas fa-hospital-alt"></i>Services</a></li>
+              <li><a href="./department.html"><i class="fas fa-building"></i>Departments</a></li>
+              <li><a href="./clinicdays.html"><i class="fas fa-calendar-alt"></i>Clinic Days</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Gallery</h3>
+            <p><i class="fas fa-image"></i>View More</p>
+            <p><i class="fas fa-image"></i>View More</p>
+          </div>
+          <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p><i class="fas fa-clock"></i>We are open 24/7</p>
+            <h3>Subscribe Us!</h3>
+            <div class="subscribe-form">
+              <input style="outline: none;" type="email" placeholder="Enter your email address" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright &copy;2024 <a href="#"><i class="fas fa-university"></i>UITH</a>. Developed by UITH ICT.
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

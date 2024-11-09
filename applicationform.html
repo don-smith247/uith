@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form - University of Ilorin Teaching Hospital</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/applicationform.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">UITH</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">UITH</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="./index.html">HOME</a></li>
+              <li>
+                <a href="./schools.html">SCHOOLS</a>
+              </li>
+              <li>
+                <a href="./department.html">DEPARTMENT</a>
+              </li>
+              <li>
+                <a href="./gallery.html">GALLERY</a>
+              </li>
+              <li><a href="./aboutus.html">ABOUT US</a></li>
+              <li><a href="./clinicdays.html">CLINIC DAYS</a></li>
+              <li><a href="./contactus.html">CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+    </nav>
+    <section class="application-form">
+        <header class="form-header">
+            <h1>Application Form</h1>
+            <p>Please complete the form below to apply for available positions at the University of Ilorin Teaching Hospital.</p>
+        </header>
+
+        <!-- Application Form -->
+        <form action="#" method="POST" class="form">
+            <!-- Personal Information Section -->
+            <fieldset class="personal-info">
+                <legend>Personal Information</legend>
+                <label for="full-name">Full Name <span class="required">*</span></label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="address">Residential Address <span class="required">*</span></label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </fieldset>
+
+            <!-- Position and Qualifications Section -->
+            <fieldset class="position-info">
+                <legend>Position & Qualifications</legend>
+                <label for="position">Position Applied For <span class="required">*</span></label>
+                <select id="position" name="position" required>
+                    <option value="">Select Position</option>
+                    <option value="Consultant">Consultant</option>
+                    <option value="Junior Doctor">Junior Doctor</option>
+                    <option value="Nurse">Nurse</option>
+                    <option value="Technician">Technician</option>
+                </select>
+
+                <label for="qualification">Qualifications <span class="required">*</span></label>
+                <textarea id="qualification" name="qualification" placeholder="List your qualifications" required></textarea>
+
+                <label for="experience">Work Experience <span class="required">*</span></label>
+                <textarea id="experience" name="experience" placeholder="Describe your work experience" required></textarea>
+            </fieldset>
+
+            <!-- Additional Documents Section -->
+            <fieldset class="documents">
+                <legend>Documents</legend>
+                <label for="cv">Upload Your CV <span class="required">*</span></label>
+                <input type="file" id="cv" name="cv" accept=".pdf, .doc, .docx" required>
+
+                <label for="certificates">Upload Academic Certificates <span class="required">*</span></label>
+                <input type="file" id="certificates" name="certificates" accept=".pdf, .jpg, .png" required>
+            </fieldset>
+
+            <!-- Declaration Section -->
+            <fieldset class="declaration">
+                <legend>Declaration</legend>
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required> I hereby declare that the information provided is accurate and complete to the best of my knowledge.
+                </label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <div class="form-footer">
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Old Jebba Road, Oke Ose, Ilorin, Kwara State, Nigeria</p>
+            <p><i class="fas fa-phone-alt"></i>+2348055763942, +2348137875019</p>
+            <p><i class="fas fa-envelope"></i>info@uithilorin.org.ng</p>
+            <h3>Tech Support</h3>
+            <p><i class="fas fa-envelope"></i>webunit@uithilorin.org.ng</p>
+          </div>
+          <div class="footer-section">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fas fa-users"></i>Patient Rights</a></li>
+              <li><a href="./ourservices.html"><i class="fas fa-hospital-alt"></i>Services</a></li>
+              <li><a href="./department.html"><i class="fas fa-building"></i>Departments</a></li>
+              <li><a href="./clinicdays.html"><i class="fas fa-calendar-alt"></i>Clinic Days</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Gallery</h3>
+            <p><i class="fas fa-image"></i>View More</p>
+            <p><i class="fas fa-image"></i>View More</p>
+          </div>
+          <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p><i class="fas fa-clock"></i>We are open 24/7</p>
+            <h3>Subscribe Us!</h3>
+            <div class="subscribe-form">
+              <input style="outline: none;" type="email" placeholder="Enter your email address" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright &copy;2024 <a href="#"><i class="fas fa-university"></i>UITH</a>. Developed by UITH ICT.
+        </div>
+    </footer>
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    color: #3664F4;
+}
+
+/* Form Section */
+section.application-form {
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3664F4;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Form Fields */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+fieldset {
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3664F4;
+    margin-bottom: 15px;
+}
+
+/* Labels and Inputs */
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3664F4;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+/* Required Indicator */
+.required {
+    color: red;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #3664F4;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #294db2;
+}
+
+/* Form Footer */
+.form-footer {
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    section.application-form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .form-header p {
+        font-size: 16px;
+    }
+
+    label, input, select, textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 14px 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    section.application-form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    label, input, select, textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 15px;
+        padding: 14px;
+    }
+}
+
+    </style>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UITH Departments</title>
+    <link rel="stylesheet" href="./css/department.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">UITH</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">UITH</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="./index.html">HOME</a></li>
+              <li>
+                <a href="./schools.html">SCHOOLS</a>
+              </li>
+              <li>
+                <a href="./department.html">DEPARTMENT</a>
+              </li>
+              <li>
+                <a href="./gallery.html">GALLERY</a>
+              </li>
+              <li><a href="./aboutus.html">ABOUT US</a></li>
+              <li><a href="./clinicdays.html">CLINIC DAYS</a></li>
+              <li><a href="./contactus.html">CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="containerr">
+        <h1 class="h1">UITH Departments</h1>
+        <div id="departments"></div>
+    </div>
+    <script>
+        const departments = {
+            clinical: {
+                name: 'Clinical',
+                items: [
+                    'Anesthesia', 'Behavioural Science', 'Epidemiology', 'Heamatology',
+                    'Invitro Fertilization', 'Medicine', 'O and G', 'Ent', 'Ophthalmology',
+                    'Pain And Pallative', 'Pharmacy', 'Paediatrics', 'Physiotherapy',
+                    'Radiology', 'Surgery', 'Urology', 'Nursing Service', 'INHIS',
+                    'Accident And Emergency', 'Community Heath', 'Dietetic', 'Health Information'
+                ]
+            },
+            nonClinical: {
+                name: 'Non Clinical',
+                items: [
+                    'Account', 'Board And Tender', 'Corporate Affairs', 'ICT', 'Servicom',
+                    'Procurement Unit', 'Legal', 'Revolving Fund', 'Audit',
+                    'Central Administration', 'Ethics And Research', 'Personnel And Training',
+                    'Store', 'Works', 'Laundry', 'Library'
+                ]
+            },
+            laboratory: {
+                name: 'Laboratory',
+                items: [
+                    'Chemical Pathology', 'Microbiology/Parasitology', 'Histopathology',
+                    'Hemathology', 'Anatomic Pathology'
+                ]
+            },
+            
+        };
+
+        function createDepartmentSection(key, department) {
+            return `
+                <div class="department-section">
+                    <div class="department-header" onclick="toggleDepartment(this)">
+                        <h2>${department.name}</h2>
+                        <span class="arrow">▼</span>
+                    </div>
+                    <div class="department-content">
+                        <div class="department-list">
+                            ${department.items.map(item => `
+                                <div class="department-item">
+                                    ${item}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function toggleDepartment(header) {
+            const content = header.nextElementSibling;
+            const arrow = header.querySelector('.arrow');
+            content.classList.toggle('active');
+            header.classList.toggle('active');
+        }
+
+        window.onload = function() {
+            const departmentsContainer = document.getElementById('departments');
+            departmentsContainer.innerHTML = Object.entries(departments)
+                .map(([key, department]) => createDepartmentSection(key, department))
+                .join('');
+        };
+    </script>
+    
+      <script src="./script.js"></script>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i>Old Jebba Road, Oke Ose, Ilorin, Kwara State, Nigeria</p>
+            <p><i class="fas fa-phone-alt"></i>+2348055763942, +2348137875019</p>
+            <p><i class="fas fa-envelope"></i>info@uithilorin.org.ng</p>
+            <h3>Tech Support</h3>
+            <p><i class="fas fa-envelope"></i>webunit@uithilorin.org.ng</p>
+          </div>
+          <div class="footer-section">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fas fa-users"></i>Patient Rights</a></li>
+              <li><a href="./ourservices.html"><i class="fas fa-hospital-alt"></i>Services</a></li>
+              <li><a href="./department.html"><i class="fas fa-building"></i>Departments</a></li>
+              <li><a href="./clinicdays.html"><i class="fas fa-calendar-alt"></i>Clinic Days</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Gallery</h3>
+            <p><i class="fas fa-image"></i>View More</p>
+            <p><i class="fas fa-image"></i>View More</p>
+          </div>
+          <div class="footer-section">
+            <h3>Opening Hours</h3>
+            <p><i class="fas fa-clock"></i>We are open 24/7</p>
+            <h3>Subscribe Us!</h3>
+            <div class="subscribe-form">
+              <input style="outline: none;" type="email" placeholder="Enter your email address" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright &copy;2024 <a href="#"><i class="fas fa-university"></i>UITH</a>. Developed by UITH ICT.
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

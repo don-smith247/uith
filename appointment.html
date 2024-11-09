@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UITH Patient Appointment Form</title>
+    <link rel="stylesheet" href="./css/appointment.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">UITH</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">UITH</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="./index.html">HOME</a></li>
+              <li>
+                <a href="./schools.html">SCHOOLS</a>
+              </li>
+              <li>
+                <a href="./department.html">DEPARTMENT</a>
+              </li>
+              <li>
+                <a href="./gallery.html">GALLERY</a>
+              </li>
+              <li><a href="./aboutus.html">ABOUT US</a></li>
+              <li><a href="./clinicdays.html">CLINIC DAYS</a></li>
+              <li><a href="./contactus.html">CONTACT US</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+    </nav>
+
+<div class="container">
+    <h1>UITH Patient Appointment Form</h1>
+
+    <form action="#" method="POST">
+        <!-- Specialty Selection -->
+        <div class="form-group">
+            <label for="specialty">Specialty</label>
+            <select id="specialty" name="specialty" required>
+                <option value="">Please Select</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="dermatology">Dermatology</option>
+                <!-- Add more specialties as needed -->
+            </select>
+        </div>
+
+        <!-- Doctor's Name (Optional) -->
+        <div class="form-group">
+            <label for="doctorName">Doctor's Name (Optional)</label>
+            <input type="text" id="doctorName" name="doctorName" placeholder="Doctor's Name (If you have a preference)">
+        </div>
+
+        <!-- Preferred Appointment -->
+        <div class="form-group">
+            <h2>Preferred Appointment</h2>
+            <label for="preferredDate">Preferred Appointment Date</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+            <small>We will do our best to book at your preferred date and time. You will receive a booking confirmation once the booking has been made.</small>
+        </div>
+
+        <!-- Medical Request -->
+        <div class="form-group">
+            <label for="medicalRequest">Medical Request or Concern</label>
+            <textarea id="medicalRequest" name="medicalRequest" placeholder="What are you seeking treatment for?" required></textarea>
+        </div>
+
+        <!-- Patient Information -->
+        <h2>Patient Information</h2>
+        <div class="two-columns">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Input First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Input Last Name" required>
+            </div>
+        </div>
+
+        <div class="two-columns">
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Please Select your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+        </div>
+
+        <div class="two-columns">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Input Email" required>
+            </div>
+            <div class="form-group">
+                <label for="countryCode">Country Code</label>
+                <select id="countryCode" name="countryCode" required>
+                    <option value="">Select Country Code</option>
+                    <option value="+234">+234 (Nigeria)</option>
+                    <option value="+1">+1 (USA)</option>
+                    <!-- Add more country codes as needed -->
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Input Phone Number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nationality">Nationality</label>
+            <select id="nationality" name="nationality" required>
+                <option value="">Please Select</option>
+                <option value="nigerian">Nigerian</option>
+                <option value="foreigner">Foreigner</option>
+                <!-- Add more nationalities as needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="referral">How did you hear about us?</label>
+            <select id="referral" name="referral" required>
+                <option value="">Please Select</option>
+                <option value="online">Online</option>
+                <option value="friend">Friend</option>
+                <option value="doctor">Doctor</option>
+                <!-- Add more referral sources as needed -->
+            </select>
+        </div>
+
+        <!-- File Inputs -->
+        <div class="form-group file-input">
+            <label for="passport">Passport</label>
+            <input type="file" id="passport" name="passport">
+        </div>
+        <div class="form-group file-input">
+            <label for="medicalReport">Medical Report (Optional)</label>
+            <input type="file" id="medicalReport" name="medicalReport">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="form-btn">Submit Appointment Request</button>
+    </form>
+</div>
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i>Old Jebba Road, Oke Ose, Ilorin, Kwara State, Nigeria</p>
+        <p><i class="fas fa-phone-alt"></i>+2348055763942, +2348137875019</p>
+        <p><i class="fas fa-envelope"></i>info@uithilorin.org.ng</p>
+        <h3>Tech Support</h3>
+        <p><i class="fas fa-envelope"></i>webunit@uithilorin.org.ng</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="#"><i class="fas fa-users"></i>Patient Rights</a></li>
+          <li><a href="./ourservices.html"><i class="fas fa-hospital-alt"></i>Services</a></li>
+          <li><a href="./department.html"><i class="fas fa-building"></i>Departments</a></li>
+          <li><a href="./clinicdays.html"><i class="fas fa-calendar-alt"></i>Clinic Days</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Gallery</h3>
+        <p><i class="fas fa-image"></i>View More</p>
+        <p><i class="fas fa-image"></i>View More</p>
+      </div>
+      <div class="footer-section">
+        <h3>Opening Hours</h3>
+        <p><i class="fas fa-clock"></i>We are open 24/7</p>
+        <h3>Subscribe Us!</h3>
+        <div class="subscribe-form">
+          <input style="outline: none;" type="email" placeholder="Enter your email address" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Copyright &copy;2024 <a href="#"><i class="fas fa-university"></i>UITH</a>. Developed by UITH ICT.
+    </div>
+</footer>
+<script src="./script.js"></script>
+
+</body>
+</html>
