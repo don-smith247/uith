@@ -316,6 +316,7 @@ nav{
 } */
 
 .gallery-container {
+    margin-top: 70px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
