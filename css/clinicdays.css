@@ -431,7 +431,7 @@ nav{
 
 @media (max-width: 768px) {
     .container {
-        margin: 0;
+        margin-top: 100px;
         border-radius: 0;
     }
 
